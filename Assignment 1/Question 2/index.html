@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--Using HTML5, produce the following nested tables exactly as illustrated in figure 2. . It includes
+the <th>, <td> and <tr> tags. Include the border attribute in your <table> tag to make it easier
+to identify the cells even though it will not pass the HTML5 validator. No other CSS required
+(Question 4 will have you practicing with CSS). -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Question 2 - Tables</title>
+</head>
+
+<body>
+  <h1>Nested Tables</h1>
+
+  <table border="1">
+    <tr>
+      <th>Header Column 1</th>
+      <th>Header Column 2</th>
+      <th>Header Column 3</th>
+      <th>Header Column 4</th>
+    </tr>
+    <tr>
+      <td>Row 2 - Item 1</td>
+      <td>Row 2 - Item 2</td>
+      <td rowspan="2"><p><strong>Row 2: Nested Table 1 <br></p></strong>
+        <table border="1">
+          <tr>
+            <th>Row 1 Header</th>
+            <td>item</td>
+          </tr>
+          <tr>
+            <th>Row 2 Header</th>
+            <td>item</td>
+          </tr>
+          <tr>
+            <th>Row 2 Header</th>
+            <td>item</td>
+          </tr>
+        </table>
+      </td>
+      <td>Row 2 - Item 4 <br>A second line</td>
+    </tr>
+    <tr>
+      <td><p><strong>Row 3: Nested Table 2</p></strong>
+        <table border="1">
+          <tr>
+            <th>Row 1 Header</th>
+            <td>item</td>
+          </tr>
+          <tr>
+            <th>Row 2 Header</th>
+            <td>item</td>
+          </tr>
+        </table>
+      </td>
+      <td>Row 3 - Item 2</td>
+      <td rowspan="2">Row 3 - Item 3</td>
+    </tr>
+    <tr>
+      <td>Row 4 - Item 1</td>
+      <td>Row 4 - Item 2</td>
+      <td>Row 4 - Item 3</td>
+    </tr>
+    <tr>
+      <td colspan="4">Row 5 - Last Row of outer table</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
