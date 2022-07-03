@@ -1,0 +1,22 @@
+li a{
+  display: block;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+li .current-page{
+  background-color: green;
+  color:white;
+}
+li a:hover:not(.current-page){
+  background-color: black;
+  color: white;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  background-color: grey;
+}

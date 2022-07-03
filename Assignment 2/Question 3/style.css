@@ -1,0 +1,19 @@
+#”first”{
+  position: relative;
+  left: 40px;
+}
+#”second”{
+  position: relative;
+  bottom: 80px;
+}
+div{
+  padding: 5px;
+  border: dotted 2px green;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.”red”{
+  font-weight: bold;
+  color: red;
+}

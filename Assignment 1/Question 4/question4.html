@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Question 4 - Presentation</title>
+  <style>
+    #fieldset-1 {
+      background-color: IndianRed;
+      border-color: #ff0066;
+      border-style: solid;
+
+    }
+
+    #fieldset-2 {
+      background-color: #B7CADB;
+      border-color: Aqua;
+      border-style: solid;
+    }
+
+    body {
+      background-color: SteelBlue;
+    }
+
+    #leg-1 {
+      color: #ff0066;
+    }
+
+    #leg-2 {
+      color: Aqua;
+    }
+    .set-1 {
+      color: Coral;
+      font-weight: bold;
+    }
+
+    .set-2 {
+      color: AquaMarine;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <h1>Gina Cody Alumni Survey </h1>
+      </td>
+      <td><a href="https://avatars.githubusercontent.com/u/60796192?s=200&v=4"><img src="https://avatars.githubusercontent.com/u/60796192?s=200&v=4" alt="Gina Cody logo" height="100"></a></td>
+    </tr>
+  </table>
+  <form class="" action="index.html" method="post">
+    <fieldset id="fieldset-1">
+      <legend id="leg-1">Student's Personal Info</legend>
+      <label class="set-1">First Name </label>
+      <input id="first-name-text" type="text" name="First Name" value=""> <br> <br>
+      <label class="set-1">Family Name</label>
+      <input id="family-name-text" type="text" name="Family Name" value=""> <br> <br>
+      <label class="set-1">Gender: </label>
+      <input id="man-radio" type="radio" name="Gender" value="Man" required="required"><label>Man</label>
+      <input id="woman-radio" type="radio" name="Gender" value="Woman"><label>Woman</label>
+      <input id="other-radio" type="radio" name="Gender" value="Other"><label>Other</label> <br><br>
+      <label class="set-1">What age category are you from?</label>
+      <select name="age" id="age">
+        <option id="less18-dropdown" value="Less than 18">Less than 18</option>
+        <option id="18to21-dropdown" value="Between 18 and 21">Between 18 and 21</option>
+        <option id="22to24-dropdown" value="Between 22 and 24">Between 21 and 24</option>
+        <option id="more24-dropdown" value="More than 24">More than 24</option>
+      </select><br><br>
+      <label class="set-1">Email</label>
+      <input id="email-email" type="email" name="Email" value=""><br><br>
+    </fieldset>
+
+    <fieldset id="fieldset-2">
+      <legend id="leg-2">Survey Questions</legend>
+      <label class="set-2">Which programming languages do you use? (Pick as many as apply)</label> <br>
+      <label> Java</label>
+      <input id="java-checkbox" type="checkbox" name="Java" value="">
+      <label>Python</label>
+      <input id="python-checkbox" type="checkbox" name="Python" value="">
+      <label>C#</label>
+      <input id="c#-checkbox" type="checkbox" name="C#" value=""> <br>
+      <label>C++</label>
+      <input id="c++-checkbox" type="checkbox" name="C++" value="">
+      <label>JavaScript</label>
+      <input id="javascript-checkbox" type="checkbox" name="JavaScript" value="">
+      <label>Go</label>
+      <input id="go-checkbox" type="checkbox" name="Go" value=""> <br>
+      <label>other</label>
+      <input id="other-checkbox" type="checkbox" name="other" value=""><br><br>
+      <label class="set-2">List your 3 favourite Courses taken at Concordia</label><br>
+      <input id="course1-text" type="text" name="course1" value=""><input id="course2-text" type="text" name="course2" value=""><input id="course3-text" type="text" name="course3" value=""> <br><br>
+      <label class="set-2">You also have the opportunity to win concert tickets to one of the following shows, please pick one:</label> <br>
+      <input id="maroon5-radio" type="radio" name="concert" value=""><label>Maroon 5</label>
+      <input id="edsheeran-radio" type="radio" name="concert" value=""><label>Ed Sheeran</label>
+      <input id="adele-radio" type="radio" name="concert" value=""><label>Adele</label>
+      <input id="philcollins-radio" type="radio" name="concert" value=""><label>Phil Collins</label> <br><br>
+    </fieldset>
+    <br>
+    <p>Thank you for your time</p>
+    <br>
+    <input id="submit-submit" type="submit" name="submit" value="Submit">
+    <input id="reset-reset" type="reset" name="reset" value="Reset">
+
+  </form>
+</body>
+
+</html>
