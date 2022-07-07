@@ -30,6 +30,7 @@
     #leg-2 {
       color: Aqua;
     }
+
     .set-1 {
       color: Coral;
       font-weight: bold;
@@ -46,22 +47,21 @@
   <table>
     <tr>
       <td>
-        <h1>Gina Cody Alumni Survey </h1>
+        <h1>Music Lover's Survey</h1>
       </td>
-      <td><a href="https://avatars.githubusercontent.com/u/60796192?s=200&v=4"><img src="https://avatars.githubusercontent.com/u/60796192?s=200&v=4" alt="Gina Cody logo" height="100"></a></td>
+      <td><img src="musicNotes.jpg" alt="Music Notes.jpg" height="100"></a></td>
     </tr>
   </table>
   <form class="" action="index.html" method="post">
     <fieldset id="fieldset-1">
-      <legend id="leg-1">Student's Personal Info</legend>
+      <legend id="leg-1">Music Lover's Personal Information</legend>
       <label class="set-1">First Name </label>
       <input id="first-name-text" type="text" name="First Name" value=""> <br> <br>
       <label class="set-1">Family Name</label>
       <input id="family-name-text" type="text" name="Family Name" value=""> <br> <br>
       <label class="set-1">Gender: </label>
       <input id="man-radio" type="radio" name="Gender" value="Man" required="required"><label>Man</label>
-      <input id="woman-radio" type="radio" name="Gender" value="Woman"><label>Woman</label>
-      <input id="other-radio" type="radio" name="Gender" value="Other"><label>Other</label> <br><br>
+      <input id="woman-radio" type="radio" name="Gender" value="Woman"><label>Woman</label> <br><br>
       <label class="set-1">What age category are you from?</label>
       <select name="age" id="age">
         <option id="less18-dropdown" value="Less than 18">Less than 18</option>
@@ -75,31 +75,31 @@
 
     <fieldset id="fieldset-2">
       <legend id="leg-2">Survey Questions</legend>
-      <label class="set-2">Which programming languages do you use? (Pick as many as apply)</label> <br>
-      <label> Java</label>
-      <input id="java-checkbox" type="checkbox" name="Java" value="">
-      <label>Python</label>
-      <input id="python-checkbox" type="checkbox" name="Python" value="">
-      <label>C#</label>
-      <input id="c#-checkbox" type="checkbox" name="C#" value=""> <br>
-      <label>C++</label>
-      <input id="c++-checkbox" type="checkbox" name="C++" value="">
-      <label>JavaScript</label>
-      <input id="javascript-checkbox" type="checkbox" name="JavaScript" value="">
-      <label>Go</label>
-      <input id="go-checkbox" type="checkbox" name="Go" value=""> <br>
-      <label>other</label>
-      <input id="other-checkbox" type="checkbox" name="other" value=""><br><br>
-      <label class="set-2">List your 3 favourite Courses taken at Concordia</label><br>
-      <input id="course1-text" type="text" name="course1" value=""><input id="course2-text" type="text" name="course2" value=""><input id="course3-text" type="text" name="course3" value=""> <br><br>
-      <label class="set-2">You also have the opportunity to win concert tickets to one of the following shows, please pick one:</label> <br>
-      <input id="maroon5-radio" type="radio" name="concert" value=""><label>Maroon 5</label>
-      <input id="edsheeran-radio" type="radio" name="concert" value=""><label>Ed Sheeran</label>
-      <input id="adele-radio" type="radio" name="concert" value=""><label>Adele</label>
-      <input id="philcollins-radio" type="radio" name="concert" value=""><label>Phil Collins</label> <br><br>
+      <label class="set-2">Which type of music do you listen to? (Pick as many as apply)</label> <br>
+      <label>Blues</label>
+      <input id="Blues-checkbox" type="checkbox" name="Blues" value="">
+      <label>Classical music</label>
+      <input id="Classical-checkbox" type="checkbox" name="Classical" value="">
+      <label>Electronic music</label>
+      <input id="Electronic-checkbox" type="checkbox" name="Electronic" value=""> <br>
+      <label>Hip Hop/Rap</label>
+      <input id="HipHop-checkbox" type="checkbox" name="HipHop" value="">
+      <label>Pop (popular music)</label>
+      <input id="Pop-checkbox" type="checkbox" name="Pop" value="">
+      <label>Reggae</label>
+      <input id="Reggae-checkbox" type="checkbox" name="Reggae" value=""> <br>
+      <label>Other</label>
+      <input id="Other-checkbox" type="checkbox" name="other" value=""><br><br>
+      <label class="set-2">List your 3 favourite artists/bands:</label><br>
+      <input id="band1-text" type="text" name="band1" value=""><input id="band2-text" type="text" name="band2" value=""><input id="band3-text" type="text" name="band3" value=""> <br><br>
+      <label class="set-2">If you were to win tickets which show would you like 2 tickets to?</label> <br>
+      <input id="BritFloyd-radio" type="radio" name="concert" value=""><label>BRIT FLOYD (March 24, 2016)</label>
+      <input id="IronMaiden-radio" type="radio" name="concert" value=""><label>IRON MAIDEN (April 1, 2016)</label>
+      <input id="JanetJackson-radio" type="radio" name="concert" value=""><label>JANET JACKSON (June 17, 2016)</label>
+      <input id="Adele-radio" type="radio" name="concert" value=""><label>ADELE (September 30, 2016)</label> <br><br>
     </fieldset>
     <br>
-    <p>Thank you for your time</p>
+    <p>Thank you for taking the time to fill out our survey!</p>
     <br>
     <input id="submit-submit" type="submit" name="submit" value="Submit">
     <input id="reset-reset" type="reset" name="reset" value="Reset">

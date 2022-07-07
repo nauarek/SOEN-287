@@ -4,3 +4,7 @@ p{
 body{
     background-color: burlywood;
 }
+h1{
+  float:left;
+  font-size: 3rem;
+}
