@@ -1,0 +1,15 @@
+#input-box{
+    margin: 200px auto ;
+    width: 500px;
+    padding: 20px;
+    border-style: solid;
+    border-color: steelblue;
+    background-color: aliceblue;
+
+}
+body{ 
+    background-color: aqua;
+}
+footer{
+    
+}

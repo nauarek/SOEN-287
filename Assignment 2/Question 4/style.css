@@ -1,10 +1,45 @@
-p{
-    color: red;
-}
 body{
-    background-color: burlywood;
+    background-color: #F5EDDC;
+    margin: 0;
 }
 h1{
-  float:left;
   font-size: 3rem;
+}
+
+.sidebar{
+  height: auto;
+  width: 160px;
+  position: fixed;
+  top: 125px;
+  left: 0;
+  background-color: #FAD9A1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+
+.sidebar a:hover {
+  color: whitesmoke;
+}
+
+.content-area{
+  margin-left: 160px;
+  padding: 0 10px;
+}
+.header{
+  background-color: #DFBB9D;
+}
+.footer{
+  background-color: #87805E;
+  top: 100%;
+  text-align: center;
+  margin-top: 500px;
 }
