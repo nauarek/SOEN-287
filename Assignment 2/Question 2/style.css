@@ -9,12 +9,11 @@ li .current-page{
   background-color: green;
   color:white;
 }
-li a:hover:not(.current-page){
+li a:hover.other-page{
   background-color: black;
   color: white;
 }
 ul{
-  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 220px;
