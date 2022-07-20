@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Hello World </title>
-</head>
-<body>
-    <script type = "text/javascript">
-        document.write("Hello, fellow Web programmers!");
-        </script>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
     
+</head>
+
+<body>
+    <h1>This is the addNumbers Function</h1>
+    <label>Enter the array of numbers you want to add:</label>
+    <input type="text" id="numArr">
+
+    <h2>This is the getCurrentDate Function</h2>
+    <p id="currentdate"></p>
+    <h3>This is the arrayToString Function</h3>
+    <h4>This is the findMaxNumber Function</h4>
+    <h5>This is the getDigits Function</h5>
+    <h6>This is the reverseString Function</h6>
+
+    <script>
+        function addNumbers(arrayOfNumbers) {
+            var sum;
+            for (var i; i < arrayOfNumbers.length; i++) {
+                sum += arrayOfNumbers[i];
+            }
+            return sum;
+        }
+        //document.getElementById("adding").innerHTML = arrayOfNumbers(document.getElementById("numArr"));
+
+        function getCurrentDate() {
+            var date = new Date();
+            //get day of the week
+            var daysOfWeek = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            var weekDay = daysOfWeek[date.getDay()];
+
+            //get the month
+            var months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ];
+            var month = months[date.getMonth()];
+            //get the day of the month
+            var dayOfMonth = date.getDate();
+            //get the year
+            var year = date.getFullYear();
+
+            return weekDay + ", " + month + " " + dayOfMonth + ", " + year;
+            //return as monday, may 10, 2010
+        }
+        document.getElementById("currentdate").innerHTML = getCurrentDate();
+
+        function arrayToString(arrayOfWords) {
+            var longString;
+            for (var i; i < arrayOfWords.length; i++) {
+                longString += arrayOfWords[i];
+            }
+            return arrayOfWords;
+        }
+
+        function findMaxNumber() { 
+            
+        }
+
+        function getDigits(string) {
+            var digitsFromString;
+            for (var i; i < string.length; i++) {
+                //scan string for digits
+                //digitsFromString += //scanned digits;
+            }
+            return digitsFromString;
+        }
+
+        function reverseString(string) {
+            var rString;
+            for (var i = string.length; i >= 0; i--) {
+                rString += string[i];
+            }
+        }
+    </script>
+
 </body>
+
 </html>
