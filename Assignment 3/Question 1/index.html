@@ -4,30 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>Hello World</title>
-    
-</head>
-
-<body>
-    <h1>This is the addNumbers Function</h1>
-    <label>Enter the array of numbers you want to add:</label>
-    <input type="text" id="numArr">
-
-    <h2>This is the getCurrentDate Function</h2>
-    <p id="currentdate"></p>
-    <h3>This is the arrayToString Function</h3>
-    <h4>This is the findMaxNumber Function</h4>
-    <h5>This is the getDigits Function</h5>
-    <h6>This is the reverseString Function</h6>
-
     <script>
         function addNumbers(arrayOfNumbers) {
-            var sum;
-            for (var i; i < arrayOfNumbers.length; i++) {
+            var sum = 0;
+            for (var i=0; i < arrayOfNumbers.length; i++) {
                 sum += arrayOfNumbers[i];
             }
             return sum;
         }
-        //document.getElementById("adding").innerHTML = arrayOfNumbers(document.getElementById("numArr"));
+        
 
         function getCurrentDate() {
             var date = new Date();
@@ -67,14 +52,13 @@
             return weekDay + ", " + month + " " + dayOfMonth + ", " + year;
             //return as monday, may 10, 2010
         }
-        document.getElementById("currentdate").innerHTML = getCurrentDate();
 
         function arrayToString(arrayOfWords) {
-            var longString;
-            for (var i; i < arrayOfWords.length; i++) {
+            var longString='';
+            for (var i=0; i < arrayOfWords.length; i++) {
                 longString += arrayOfWords[i];
             }
-            return arrayOfWords;
+            return longString;
         }
 
         function findMaxNumber() { 
@@ -82,21 +66,45 @@
         }
 
         function getDigits(string) {
-            var digitsFromString;
-            for (var i; i < string.length; i++) {
-                //scan string for digits
-                //digitsFromString += //scanned digits;
-            }
-            return digitsFromString;
+            var digits = string.replace(/\D/g,'');   
+            return digits;
         }
 
         function reverseString(string) {
-            var rString;
-            for (var i = string.length; i >= 0; i--) {
-                rString += string[i];
-            }
+            return  string.split("").reverse().join("");
         }
     </script>
+    
+</head>
+
+<body>
+    <h1>This is the addNumbers Function</h1>
+    <p id="addNum"></p>
+    <script>
+        document.getElementById("addNum").innerHTML = addNumbers([1,2,3,4,5]);
+    </script>
+    <h2>This is the getCurrentDate Function</h2>
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").innerHTML = getCurrentDate();
+    </script>
+    <h3>This is the arrayToString Function</h3>
+    <p id="arrString"></p>
+    <script>
+        document.getElementById("arrString").innerHTML = arrayToString(['Hello','World','how','are','you']);
+    </script>
+    <h4>This is the findMaxNumber Function</h4>
+    <h5>This is the getDigits Function</h5>
+    <p id="digitString"></p>
+    <script>
+        document.getElementById("digitString").innerHTML = getDigits('todays20red345time09');
+    </script>
+    <h6>This is the reverseString Function</h6>
+    <p id="reverseString"></p>
+    <script>
+        document.getElementById("reverseString").innerHTML = reverseString('HelloWorld');
+    </script>
+
 
 </body>
 
