@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+    <style>
+        .images-div{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gravitational waves have been detected for the first time</h1>
+
+
+    <div class="images-div">
+
+        <div class="image-slide">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1097E/production/_85366976_lisa.jpg" alt="first image">
+        </div>
+        <div class="image-slide">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2BE4/production/_88163211_hs-2008-16-bq-xlarge_web.jpg" alt="second image">
+        </div>
+        <div class="image-slide">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/181A3/production/_85632789_aei_hannover_massimo_fiorito.jpg" alt="third image">
+        </div>
+        <div class="image-slide">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C43C/production/_88163205_aerial5.jpg" alt="fourth image">
+        </div>
+    </div>
+
+
+    <a href="#" onclick="next(-1)">Previous</a> <a href="#" onclick="next(1)">Next</a>
+    <p>The first direct detection of gravitational waves is without doubt one of the most remarkable breakthroughs of our time. The Advanced LIGO laboratories in the US states of Washington and Louisiana have traced the warping of space from the merger of two black holes about 1.3 billion light-years from Earth.</p>
+    
+
+    <script>
+        var currentSlide =1;
+        displaySlide(currentSlide);
+
+        function next(current){
+            displaySlide(currentSlide+= current);
+        }
+        function displaySlide(current){
+            var slides = document.getElementsByClassName("image-slide");
+            if(current>slides.length){
+                currentSlide=1;
+            }
+            if(current<1){
+                currentSlide = slides.length;
+            }
+            for(var i=0;i<slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[currentSlide-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

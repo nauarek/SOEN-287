@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Disclaimer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <table>
+      <tr>
+        <td> <h1>GivPet</h1></td>
+        <td> <a href="index.html"><img src="Golden-Retriever.png" alt="dog picture" width="150"> </a> </td>
+          <td id="clock"></td>
+      </tr>
+    </table>
+  </div>
+    <div class="sidebar">
+        <a href="index.html">Home Page</a>
+        <a href="available-pets.html">Browse Available Pets</a>
+        <a href="dog-cat.html">Find a Dog/Cat</a>
+        <a href="dog-care.html">Dog Care</a>
+        <a href="cat-care.html">Cat Care</a>
+        <a href="give-pet.html">Have a pet to give away?</a>
+        <a href="contact-us.html">Contact Us</a>
+      </div>
+      <div class="content-area">
+        <h2>We assure all users that their data will not be sold or misused for any malicious purposes</h2> <br>
+        <h2>The users inputted data is taken as is, any misinputs from the user on any and all forms
+            are of the responsibility by the user
+        </h2> <br> <br> <br> <br>
+        <h3 class="center">GivPet Copyright 2022</h3> <br><br>
+        <h3 class="center">Images obtained from <a href="https://freepngimg.com/animals/puppy"> <span class="special-link">Freepngimg.com</span></a></h3>
+        
+      </div>
+       
+      <div class="footer">
+        <footer><a href="privacy-disclaimer.html" class="special-link">Privacy/Disclaimer Statement</a>Designed for Chrome 2022</footer>
+        </div>
+        <script>
+          function dateTime(){
+          var date = new Date();
+          var n = date.toDateString();
+          var time = date.toLocaleTimeString();
+          document.getElementById('clock').innerHTML = "Date: " + n +"<br> Time: " + time;
+        }
+          setInterval("dateTime()", 1000);
+        </script>
+    
+</body>
+</html>

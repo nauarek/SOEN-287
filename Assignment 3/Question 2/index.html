@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Books Online</title>
+    
+</head>
+<body>
+    <h1>Order Books Online</h1>
+    <fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Basic XHTML</td>
+                <td><input type="text"  id="basicXhtml"></td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td>Intro to PHP</td>
+                <td><input type="text"  id="introPhp"></td>
+                <td>$86.00</td>
+            </tr>
+            <tr>
+                <td>Advanced JQuery</td>
+                <td><input type="text"  id="advancedJquery"></td>
+                <td>$55.00</td>
+            </tr>
+        </table>
+        <br> <br>
+        <button onclick="printPrices()">Place Order</button>
+    </fieldset>
+
+    <div id="resultingText"></div>
+
+    <h3 id="totalXhtml"> <span id="price-html"></span>
+    </h3>
+    <h3 id="totalPhp"></h3>
+    <h3 id="totalJquery"></h3>
+    <br>
+    <h3 id="finalTotal"></h3>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

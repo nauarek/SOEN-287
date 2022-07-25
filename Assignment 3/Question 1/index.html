@@ -16,7 +16,6 @@
 
         function getCurrentDate() {
             var date = new Date();
-            //get day of the week
             var daysOfWeek = [
                 "Sunday",
                 "Monday",
@@ -27,8 +26,6 @@
                 "Saturday",
             ];
             var weekDay = daysOfWeek[date.getDay()];
-
-            //get the month
             var months = [
                 "January",
                 "February",
@@ -44,13 +41,10 @@
                 "December",
             ];
             var month = months[date.getMonth()];
-            //get the day of the month
             var dayOfMonth = date.getDate();
-            //get the year
             var year = date.getFullYear();
 
             return weekDay + ", " + month + " " + dayOfMonth + ", " + year;
-            //return as monday, may 10, 2010
         }
 
         function arrayToString(arrayOfWords) {
@@ -62,7 +56,13 @@
         }
 
         function findMaxNumber() { 
-            
+            var biggestNum = arguments[0];
+            for(var i = 0; i < arguments.length; i++){
+                if(arguments[i]>biggestNum){
+                    biggestNum = arguments[i];
+                }
+            }
+            return biggestNum;
         }
 
         function getDigits(string) {
@@ -73,6 +73,7 @@
         function reverseString(string) {
             return  string.split("").reverse().join("");
         }
+        
     </script>
     
 </head>
@@ -94,6 +95,10 @@
         document.getElementById("arrString").innerHTML = arrayToString(['Hello','World','how','are','you']);
     </script>
     <h4>This is the findMaxNumber Function</h4>
+    <p id="maxNumber"></p>
+    <script>
+        document.getElementById("maxNumber").innerHTML =findMaxNumber(1,2,3,4,5,6,7);
+    </script>
     <h5>This is the getDigits Function</h5>
     <p id="digitString"></p>
     <script>

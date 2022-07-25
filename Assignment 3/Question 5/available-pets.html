@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Available Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <table>
+      <tr>
+        <td> <h1>GivPet</h1></td>
+        <td> <a href="index.html"><img src="Golden-Retriever.png" alt="dog picture" width="150"> </a> </td>
+          <td id="clock"></td>
+      </tr>
+    </table>
+  </div>
+    <div class="sidebar">
+        <a href="index.html">Home Page</a>
+        <a href="available-pets.html">Browse Available Pets</a>
+        <a href="dog-cat.html">Find a Dog/Cat</a>
+        <a href="dog-care.html">Dog Care</a>
+        <a href="cat-care.html">Cat Care</a>
+        <a href="give-pet.html">Have a pet to give away?</a>
+        <a href="contact-us.html">Contact Us</a>
+      </div>
+      <div class="content-area center">
+
+        <!-- Create a Browse Available Pets page linked from the side menu. Inside the content area of
+this page, create a list of a couple of fictitious pets available for adoption: pets.html.
+Include an image, along with the information found in the Have a pet to give away page.
+Make sure the format of the page is easy to read and that the look is consistent with the
+rest of your site.
+Next to each pet, add a button labeled “Interested". In this iteration of the project, clicking
+on the button need not do anything. -->
+
+        <h1>Browse the available pets:</h1>
+        
+        <div class="pet">
+          <fieldset class="fieldset">
+              <img src="bengal-siamese-cat.jpg" alt="bengal-siamese-cat" class="avail-pet-img">
+              <h4>Name: <span>Helaling</span></h4>
+              <h4>Age: <span>2 Years</span></h4>
+              <h4>Cat</h4>
+              <h4>Breed(s): <span>Bengal</span>, <span>Siamese</span></h4>
+              <h4>Gender: <span>Male</span></h4>
+              <h4>Gets Along with: <span>Other Cats, Small Children</span></h4>
+          </fieldset>
+          <input  class="interest" type="submit" value="Interested?">
+        </div>
+
+        <div class="pet">
+          <fieldset class="fieldset">
+              <img src="labrador-dog.jpeg" alt="labrador-dog" class="avail-pet-img">
+              <h4>Name: <span>Calista</span></h4>
+              <h4>Age: <span>5 Years</span></h4>
+              <h4>Dog</h4>
+              <h4>Breed(s): <span>Labrador</span></h4>
+              <h4>Gender: <span>Female</span></h4>
+              <h4>Gets Along with: <span>Other Dogs</span></h4>
+          </fieldset>
+          <input  class="interest" type="submit" value="Interested?">
+        </div>
+
+        <div class="pet">
+          <fieldset class="fieldset">
+              <img src="shorthair-cat.jpg" alt="shorthair-cat" class="avail-pet-img">
+              <h4>Name: <span>Aqualyn</span></h4>
+              <h4>Age: <span>1 Years</span></h4>
+              <h4>Cat</h4>
+              <h4>Breed(s): <span>Shorthair</span></h4>
+              <h4>Gender: <span>Male</span></h4>
+              <h4>Gets Along with: <span>Other Cats, Small Children, Other Dogs</span></h4>
+          </fieldset>
+          <input  class="interest" type="submit" value="Interested?">
+        </div>
+
+        <div class="pet">
+          <fieldset class="fieldset">
+              <img src="beagle-dog.jpg" alt="beagle-dog" class="avail-pet-img">
+              <h4>Name: <span>Kazoo</span></h4>
+              <h4>Age: <span>3 Years</span></h4>
+              <h4>Dog</h4>
+              <h4>Breed(s): <span>Beagle</span></h4>
+              <h4>Gender: <span>Female</span></h4>
+              <h4>Gets Along with: <span>Other Cats, Small Children, Other Dogs</span></h4>
+          </fieldset>
+          <input  class="interest" type="submit" value="Interested?">
+        </div>
+      
+
+
+
+
+
+      </div>
+       
+      <div class="footer">
+        <footer><a href="privacy-disclaimer.html" class="special-link">Privacy/Disclaimer Statement</a>Designed for Chrome 2022</footer>
+        </div>
+
+        <script>
+          function dateTime(){
+          var date = new Date();
+          var n = date.toDateString();
+          var time = date.toLocaleTimeString();
+          document.getElementById('clock').innerHTML = "Date: " + n +"<br> Time: " + time;
+        }
+          setInterval("dateTime()", 1000);
+        </script>
+    
+</body>
+</html>
