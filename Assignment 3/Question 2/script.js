@@ -1,5 +1,6 @@
 let submit = document.querySelector("button");
 submit.addEventListener("click", printPrices);
+console.log("checl");
 
 function printPrices(){
     let xhtmlQuantity = document.getElementById("basicXhtml").value;
