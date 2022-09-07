@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Have a pet to give away?</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      var scope = "global";
+      alert("0-"+scope);
+      
+      checkloc();
+      function checkloc() {
+      alert ("1-" + window.scope);
+      var scope = "functional";
+      alert ("2-" + scope);
+      }
+      
+    </script>
 </head>
 <body>
     <div class="header">

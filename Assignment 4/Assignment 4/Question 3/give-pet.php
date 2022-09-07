@@ -32,7 +32,7 @@
             <option value="Below 3 years">Below 3 years</option>
             <option value="3-8 years">3-8 years</option>
             <option value="Older than 8 years">Older than 8 years</option>
-            <option value="Doesn't Matter">Doesn't Matter</option>
+
             </select> <br><br>
           <label>Gender of the Animal:</label>
           <select name="gender" required> 
@@ -89,7 +89,7 @@
     $fName = $_POST['first-name'];
     $lName = $_POST['family-name'];
     $email = $_POST['owner-email'];
-    $input = $linecount.':'.$userName.':'.$type.':'.$breed.':'.$gender.':'.$alongDog.':'.$alongCat.':'.$alongChild.':'.$fName.':'.$lName.':'.$email.PHP_EOL;
+    $input = $linecount.':'.$userName.':'.$type.':'.$breed.':'.$age.':'.$gender.':'.$alongDog.':'.$alongCat.':'.$alongChild.':'.$fName.':'.$lName.':'.$email.PHP_EOL;
     $fp2 = fopen($file,'a+');
     fwrite($fp2,$input);
     fclose($fp2);

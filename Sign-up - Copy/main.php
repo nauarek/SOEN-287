@@ -8,6 +8,11 @@
         $uPass = $_POST['userPass'];
     }
 
+    $sql = "INSERT INTO userdetails (userEmail) VALUES ('$uEmail')";
+    $sql = "INSERT INTO userdetails (userName) VALUES ('$uName')";
+    $sql = "INSERT INTO userdetails (userPass) VALUES ('$uPass')";
+
+
     
     
     ?>
